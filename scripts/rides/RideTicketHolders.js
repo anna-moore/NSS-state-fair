@@ -1,6 +1,7 @@
 const contentTarget = document.querySelector(".rides")
 const eventHub = document.querySelector("#state-fair")
 
+//listening for the custom event to place colored squares on DOM
 export const RideTicketHolders = () => {
     eventHub.addEventListener("rideTicketPurchased", event => {
         console.log("ride event listening")
