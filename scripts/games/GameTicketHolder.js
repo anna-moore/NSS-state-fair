@@ -10,4 +10,3 @@ export const RideTicketHolders = () => {
         contentTarget.innerHTML += `<div class="person rider"></div>`
     })
 }
-
