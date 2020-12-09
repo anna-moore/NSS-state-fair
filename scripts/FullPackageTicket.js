@@ -6,7 +6,6 @@ const eventHub = document.querySelector("#state-fair")
 export const FullPackageTicketHolders = () => {
     eventHub.addEventListener("fullPackageTicketPurchased", event => {
         console.log("full package event listening")
-        console.log(contentTarget)
         //In the body of the event listener callback function, 
         // add a new <div> element to the content target that has 
         // the correct classes on it. 
