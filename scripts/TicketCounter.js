@@ -9,10 +9,11 @@ let ticketSales = 0
 // update ticket counter after every event recieve 
 
 export const TicketCounter = () =>{
-    eventHub.addEventListener("anyButtonClicked", event =>{
-        console.log("button is listening")
-        
-        ticketSales++
+    eventHub.addEventListener("anyButtonClicked", event =>{ 
+
+        // ticketSales++
+        ticketSales+= event.detail.ticketSale
+        console.log("count", ticketSales)
         contentTarget.innerHTML = `Total tickets purchased: ${ticketSales}`
     })
 }
